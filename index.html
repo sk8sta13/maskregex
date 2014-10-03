@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Plugin JQuery Mask Regex</title>
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.maskregex.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#real').mask();
+                $('#dolar').mask({centsSeparator: '.', thousandSeparator: ',', currencySymbol: '$'});
+                $('#cep').mask('99999-999');
+                $('#tel').mask('(99) 9999-9999');
+                $('#cel').mask('(99) 99999-9999');
+                $('#cpf').mask('999.999.999-99');
+                $('#cnpj').mask('99.999.999/9999-99');
+                $('#data').mask('99/99/9999 99:99');
+                $('#placa').mask('AAA-9999');
+            });
+        </script>
+
+        <style>
+            body, input{
+                font-family: Verdana, sans-serif;
+                font-size: 12pt;
+            }
+            table{
+                margin: 0 auto;
+            }
+            td{
+                padding: 3px;
+            }
+            label{
+                cursor: pointer;
+            }
+            h1, h3, h4{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Plugin JQuery Mask Regex</h1><br />
+        <h3>Fa&ccedil;a um teste com essas mascaras.</h3>
+        <table>
+            <tr>
+                <td><label for="valor">Pre&ccedil;o em reais</label></td>
+                <td><input type="text" name="real" id="real" /></td>
+            </tr>
+            <tr>
+                <td><label for="valor">Pre&ccedil;o em dolares</label></td>
+                <td><input type="text" name="dolar" id="dolar" /></td>
+            </tr>
+            <tr>
+                <td><label for="cep">CEP</label></td>
+                <td><input type="text" name="cep" id="cep" /></td>
+            </tr>
+            <tr>
+                <td><label for="tel">Telefone</label></td>
+                <td><input type="text" name="tel" id="tel" /></td>
+            </tr>
+            <tr>
+                <td><label for="cel">Celular</label></td>
+                <td><input type="text" name="cel" id="cel" /></td>
+            </tr>
+            <tr>
+                <td><label for="cpf">CPF</label></td>
+                <td><input type="text" name="cpf" id="cpf" /></td>
+            </tr>
+            <tr>
+                <td><label for="cnpj">CNPJ</label></td>
+                <td><input type="text" name="cnpj" id="cnpj" /></td>
+            </tr>
+            <tr>
+                <td><label for="data">Data</label></td>
+                <td><input type="text" name="data" id="data" /></td>
+            </tr>
+            <tr>
+                <td><label for="placa">Placa</label></td>
+                <td><input type="text" name="placa" id="placa" /></td>
+            </tr>
+        </table>
+        <h4>Mask Regex by <a href="mailto:sk8sta13@gmail.com">Marcelo S. Campos</a></h4>
+    </body>
+</html>
